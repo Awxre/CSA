@@ -1,6 +1,6 @@
 public class Main {
     public static int sum(int[] x) {
-        int result = 0;
+        int result = -1;
         for (int i=0; i<x.length; i++) {
             result += x[i];
         }
