@@ -32,6 +32,7 @@ public class Main {
     public static void main(String[] args) {
         int[] summands = {1,2,3};
         System.out.println(sum(summands));
+        System.out.println("test");
         String[] str1 = {"a","b","c","d"};
         System.out.println(elementIndex(str1, "c"));
     } 
