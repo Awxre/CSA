@@ -64,7 +64,7 @@ public class BaseballGame
         if (inning <= 1 && t2scores[inning-1] == 0) {
             System.out.println("Attempting to set wrong inning");
         } else {
-            this.t2scores[i] = score;
+            this.t2scores[inning] = score;
         }
     }
     
