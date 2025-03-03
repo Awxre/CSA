@@ -1,3 +1,4 @@
+import java.util.*;
 public class Main
 {
     public static void main(String[] args) {
@@ -41,9 +42,11 @@ public class Main
         piggyBank.add(new Quarter());
         piggyBank.add(new Bill(5));
         System.out.println(piggyBank);
+        double amount = 0.0;
         for(Money item : piggyBank) {
             amount += item.getAmount();
         }
+        System.out.println("The piggy bank holds $" + amount);
         // [quarter, $1, nickel, dime, quarter, $5]
         // The piggy bank holds $6.65
     }
