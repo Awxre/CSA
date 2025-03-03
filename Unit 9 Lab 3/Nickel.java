@@ -1,4 +1,4 @@
-public class Nickel {
+public class Nickel extends Money {
   public Nickel() {
     super(0.05, "nickel");
   }
