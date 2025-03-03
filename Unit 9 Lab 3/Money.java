@@ -11,7 +11,7 @@ public class Money {
 		this.type = type;
 	}
 
-	public void getAmount() {
+	public double getAmount() {
 		return amount;
 	}
 	
