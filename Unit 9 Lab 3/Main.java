@@ -32,5 +32,19 @@ public class Main
         game3.setT2scores(myScores5);
         System.out.println(game3.getT2scores(4));
         System.out.println(game3.winner());
+        
+        ArrayList<Money> piggyBank = new ArrayList<Money>();
+        piggyBank.add(new Quarter());
+        piggyBank.add(new Bill(1));
+        piggyBank.add(new Nickel());
+        piggyBank.add(new Dime());
+        piggyBank.add(new Quarter());
+        piggyBank.add(new Bill(5));
+        System.out.println(piggyBank);
+        for(Money item : piggyBank) {
+            amount += item.getAmount();
+        }
+        // [quarter, $1, nickel, dime, quarter, $5]
+        // The piggy bank holds $6.65
     }
 }
