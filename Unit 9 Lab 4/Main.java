@@ -2,11 +2,11 @@ public class Main {
 
     public static void main(String[] args) {
         // create a blanket of each type and demonstrates how the methods work
-        Blanket b = new Blanket();
-        b.setSize("King");
-        b.setMaterial("cashmere");
-        b.setColor("Dark Blue");
-        System.out.println(b);
+        Blanket bl = new Blanket();
+        bl.setSize("King");
+        bl.setMaterial("cashmere");
+        bl.setColor("Dark Blue");
+        System.out.println(bl);
         ElectricBlanket eb = new ElectricBlanket();
         eb.setSize("Double");
         eb.setMaterial("wool");
@@ -44,5 +44,31 @@ public class Main {
         for (Participant p : diving) {
             System.out.println(p);
         }
+
+        // Create a Building class, and two subclasses, House and School. The Building class contains fields for
+        // square footage and stories. The House class contains additional fields for number of bedrooms and baths. The
+        // School class contains additional fields for number of classrooms and grade level (for example, elementary or
+        // junior high). All the classes contain appropriate get and set methods. In the Main class, create at least one
+        // object for each class and test the methods to demonstrate they work
+
+        Building b = new Building();
+        b.setSquareFootage(500.5);
+        b.setStories(4);
+
+        House h = new House();
+        h.setSquareFootage(1500.5);
+        h.setStories(2);
+        h.setBedrooms(3);
+        h.setBathrooms(2);
+
+        School s = new School();
+        s.setSquareFootage(2000.5);
+        s.setStories(3);
+        s.setNumClassrooms(25);
+        s.setGradeLevel("Elementary");
+
+        System.out.println(b.getStories() + "   " + b.getSquareFootage());
+        System.out.println(h.getBedrooms() + "   " + h.getBathrooms());
+        System.out.println(s.getNumClassrooms() + "   " + s.getGradeLevel());
     }
 }
